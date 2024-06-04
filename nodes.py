@@ -47,7 +47,7 @@ class TextOverlay:
                 ),  # Text to overlay
                 "font_size": (
                     "INT",
-                    {"default": 32, "min": 1, "max": 256, "step": 1},
+                    {"default": 32, "min": 1, "max": 100000, "step": 1},
                 ),  # Font size
                 "font": (
                     "STRING",
@@ -67,7 +67,7 @@ class TextOverlay:
                 ),  # Stroke thickness
                 "padding": (
                     "INT",
-                    {"default": 16, "min": 0, "max": 128, "step": 1},
+                    {"default": 16, "min": 0, "max": 100000, "step": 1},
                 ),  # Padding around text
                 "horizontal_alignment": (
                     cls._horizontal_alignments,
@@ -79,11 +79,11 @@ class TextOverlay:
                 ),  # Vertical alignment
                 "x_shift": (
                     "INT",
-                    {"default": 0, "min": -128, "max": 128, "step": 1},
+                    {"default": 0, "min": -1000000, "max": 1000000, "step": 1},
                 ),  # Horizontal position adjustment
                 "y_shift": (
                     "INT",
-                    {"default": 0, "min": -128, "max": 128, "step": 1},
+                    {"default": 0, "min": -1000000, "max": 1000000, "step": 1},
                 ),  # Vertical position adjustment
             }
         }
